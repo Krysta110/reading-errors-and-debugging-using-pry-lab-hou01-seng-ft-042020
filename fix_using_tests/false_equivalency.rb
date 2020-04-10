@@ -1,18 +1,14 @@
+
 # don't forget to add: require 'pry'
 require "pry"
-
-# def get_user_input
-#   num = gets.chomp
-#   binding.pry
-#   return num
-# end
+def get_user_input
+  gets.chomp
+end
 
 def prompt_user
   puts "What would you like to do?"
   puts "1.) Eat a hamburger."
   puts "2.) Eat a ham."
-  num = gets
-  return num
 end
 
 def selection(num)
@@ -23,10 +19,7 @@ def selection(num)
   end
 end
 
-# def runner
+def runner
   prompt_user
-  binding.pry
-  # num = get_user_input
-  selection(num)
-
-#end
+  selection(get_user_input)
+end
