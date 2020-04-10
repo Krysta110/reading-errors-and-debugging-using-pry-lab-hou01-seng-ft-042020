@@ -3,7 +3,7 @@
 require "pry"
 
 def get_user_input
-  gets.chomp.to_fixNum
+  gets.chomp.to_i
 end
 
 def prompt_user
